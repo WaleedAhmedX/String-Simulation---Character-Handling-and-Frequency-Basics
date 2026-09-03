@@ -1,0 +1,30 @@
+//Task 3: 
+//Time complexity: O(n), space complexity: O(n)
+
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+
+        string append;
+
+        int i=0;
+        int j=0;
+
+        while(i<word1.size() || j<word2.size())
+        {
+            if(i<word1.size())
+            {
+                append=append+word1[i];
+                i++;
+            }
+            if(j<word2.size())
+            {
+                append=append+word2[j];
+                j++;
+            }
+
+        }
+        return append;
+        
+    }
+};
